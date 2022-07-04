@@ -1,0 +1,43 @@
+<header class="s-header header">
+
+    <div class="header__top">
+        <div class="header__logo">
+            May there always be sunshine
+        </div>
+        <!-- toggles -->
+        <a href="#0" class="header__menu-toggle"><span>Menu</span></a>
+    </div>
+
+    <style>
+        header.s-header.header {
+            padding-left: 15px;
+            padding-right: 10px;
+        }
+
+        header.s-header.header nav.header__nav-wrap ul.header__nav li {
+            padding: 0px;
+        }
+
+        header.s-header.header nav.header__nav-wrap ul.header__nav li li {
+            font-size: 10px;
+        }
+
+        .year-heading {
+            color: orange;
+            font-weight: bold;
+        }
+    </style>
+    <nav class="header__nav-wrap">
+        <ul class="header__nav">
+            <li class="has-children current">
+                <a href="../index.html" title="" class="sub-menu-is-open">Blog</a>
+                <div onclick="selectYearOnPage(2022)" class="year-heading">2022</div>
+                <ul id="2022-articles" class="sub-menu" style="display: block;">
+                    <li><a href="../2022/Finding_rocks.html">Finding rocks</a></li>
+                </ul>
+            </li>
+        </ul> <!-- end header__nav -->
+
+    </nav> <!-- end header__nav-wrap -->
+
+</header>
