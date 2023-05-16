@@ -1,8 +1,12 @@
 function loadPostComponents() {
-    loadIntoTag('../components/header.html', 'header');
-    loadIntoTag('../components/summary.html', 'summary');
-    loadIntoClass('../components/comments.html', 'comments-wrap');
-    loadIntoTag('../components/footer.html', 'footer');
+    let pathPrefix = '../'
+    if(window.location.href.indexOf('/ru/') > -1) {
+        pathPrefix += '../'
+    }
+    loadIntoTag(pathPrefix + 'components/header.html', 'header');
+    loadIntoTag(pathPrefix + 'components/summary.html', 'summary');
+    loadIntoClass(pathPrefix + 'components/comments.html', 'comments-wrap');
+    loadIntoTag(pathPrefix + 'components/footer.html', 'footer');
 }
 
 function loadIntoTag(url, selector) {
