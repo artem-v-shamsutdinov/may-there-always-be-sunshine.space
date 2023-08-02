@@ -2,7 +2,7 @@
 
     <div class="header__top">
         <div class="header__logo">
-            May there always be sunshine
+            Пусть всегда будет солнце
         </div>
         <!-- toggles -->
         <a href="#0" class="header__menu-toggle"><span>Menu</span></a>
@@ -27,29 +27,35 @@
             cursor: pointer;
             font-weight: bold;
         }
+
+        li span.blog-title a {
+            display: inline;
+        }
     </style>
     <nav class="header__nav-wrap">
 
         <ul class="header__nav">
             <li class="has-children current">
-                <a href="./index.html" title="" class="sub-menu-is-open">Blog</a>
+                <span class="blog-title"><a href="./index.html" title="">Блог</a> &nbsp;&nbsp;
+                    <a href="..">EN</a> | <a href=".">РУ</a></span>
                 <div onclick="selectYearOnPage(2023)" class="year-heading">2023</div>
                 <ul id="2023-articles" class="sub-menu" style="display: block;">
                     <li><a href="./2023/Paris_or_Bust.html">Париж, Париж!</a></li>
                     <li><a href="./2023/It_aint_the_crown.html">Проблема не в короне</a></li>
                     <li><a href="./2023/I_never_met.html">Я никого не видел</a></li>
-                    li><a href="./2023/Aint_no_sunshine.html">Нету свету</a></li>
-                    <li><a href="./2023/Coming_in_on_a_Wing_and_a_Prayer.html">На честном слове и на одном крыле</a></li>
-                </ul>
-                <div onclick="selectYear(2022)" class="year-heading">2022</div>
-                <ul id="2022-articles" class="sub-menu" style="display: block;">
-                    <li><a href="./2022/Pushing_Asteroids.html">Pushing Asteroids</a></li>
-                    <li><a href="./2022/Getting_Enough_Time.html">Getting enough time</a></li>
-                    <li><a href="./2022/Long_haul_in_space.html">Long haul in space</a></li>
-                    <li><a href="./2022/Finding_rocks.html">Finding rocks</a></li>
-                    <li><a href="./2022/Parking_rocks.html">Parking rocks</a></li>
-                </ul>
+                    li><a href="./2023/Aint_no_sunshine.html">Нету свету</a>
             </li>
+            <li><a href="./2023/Coming_in_on_a_Wing_and_a_Prayer.html">На честном слове и на одном крыле</a></li>
+        </ul>
+        <div onclick="selectYear(2022)" class="year-heading">2022</div>
+        <ul id="2022-articles" class="sub-menu" style="display: block;">
+            <li><a href="./2022/Pushing_Asteroids.html">Pushing Asteroids</a></li>
+            <li><a href="./2022/Getting_Enough_Time.html">Getting enough time</a></li>
+            <li><a href="./2022/Long_haul_in_space.html">Long haul in space</a></li>
+            <li><a href="./2022/Finding_rocks.html">Finding rocks</a></li>
+            <li><a href="./2022/Parking_rocks.html">Parking rocks</a></li>
+        </ul>
+        </li>
         </ul> <!-- end header__nav -->
 
     </nav> <!-- end header__nav-wrap -->
