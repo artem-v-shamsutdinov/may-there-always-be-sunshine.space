@@ -86,7 +86,7 @@ app.get('/test', (_req, _res) => {
 
 })
 */
-const maxAgePeriod = 1000 * 60 * 60 * 24 * 79
+const maxAgePeriod = 1000 * 60 * 60 * 24 * 7
 app.use(express.static('public', {
   maxAge: maxAgePeriod
 }))
